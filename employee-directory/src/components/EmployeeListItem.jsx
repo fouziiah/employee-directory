@@ -1,7 +1,7 @@
 // import { data } from "../data";
 export default function EmployeeListItem({ title, name, headshot, id }) {
     return (
-      <div key={id} className="employee-profile">
+      <div key={id} className="employee-profile" >
         <img src={headshot} alt={name} className="img" />
         <h4 className="name">{name}</h4>
         <p className="title">{title}</p>
