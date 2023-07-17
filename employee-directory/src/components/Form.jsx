@@ -11,7 +11,7 @@ export default function Form({ addEmployee }) {
   });
   
   let [error, setError] = useState({
-    nameError: false
+    nameError: false,
     nameMessage:'name must be between 3 and 8 letters',
     titleError: false,
     phoneError: false,
@@ -84,8 +84,8 @@ export default function Form({ addEmployee }) {
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="name">Name:</label>
-      <input id="name" style={{borderColor:error.nameError[0] ? 'red' : 'black' }} value={form.name} onChange={handleChange} />
-      {error.nameError[0] && (<p className="error-message">{error.nameMessage}</p>)}     
+      <input id="name" style={{borderColor:error.nameError ? 'red' : 'black' }} value={form.name} onChange={handleChange} />
+      {error.nameError && (<p className="error-message">{error.nameMessage}</p>)}     
       <br />
       <label htmlFor="title">Title</label>
       <input id="title" value={form.title} onChange={handleChange}></input>
