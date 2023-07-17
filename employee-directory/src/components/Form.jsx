@@ -52,6 +52,14 @@ export default function Form({ addEmployee }) {
       email: ""
     });
 
+    setError({
+      ...error,
+      nameError: false,      
+      titleError: false,
+      phoneError: false,
+      emailError: false,
+    });
+
     addEmployee(employee);   
     
     
