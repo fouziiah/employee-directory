@@ -3,6 +3,8 @@ import "./index.css";
 import { data } from "./data";
 import HomePage from "./components/HomePage";
 import { useState } from "react";
+import { Route, Routes } from "react-router-dom";
+import EmployeePage from "./pages/EmployeePage";
 
 export default function App() {
   //  let [employees, setEmployees] = useState(data);
@@ -15,8 +17,13 @@ export default function App() {
   }
 
   return (
-    <div>
-      <HomePage employee={employee} addEmployee={addEmployee} />
+    
+    <div className='app'>
+      <Routes>
+        <Route path='/' element={<HomePage employee={employee} addEmployee={addEmployee} />} />
+        <Route path='/EmployeePage/:EmployeeName' element={<EmployeePage  employees={employee}/>} />
+      </Routes>
+      
     </div>
   );
 }

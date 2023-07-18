@@ -61,18 +61,7 @@ export default function Form({ addEmployee }) {
     });
 
     addEmployee(employee);   
-    
-    
-    // else if (employee.name.length < 3 || employee.name.length > 8){
-    //   setForm({
-    //     name: errors.name,
-    //     title: "",
-    //     phone: "",
-    //     email: ""
-    //   })
-      
-    // }
-    
+       
     
   }
 

@@ -9,7 +9,7 @@
     margin: 0;
   }
   
-  h1 {
+  .h1 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -82,40 +82,23 @@
   * {
     margin: 1px;
   }
-  /* 
-  
-  
-  .home {
+
+  .float{
+    float: left;
+  }
+  .profile-box{
     display: flex;
+    border: 1px solid black;
+    height: 100px
+  }
+
+  .employee-info{
+    display: flex;    
     flex-direction: column;
+    justify-content: center;
   }
-  
-  .home button {
-    width: 50%;
-    margin-top: 50px;
-    align-self: center;
+  h3{
+    border: 1px solid black;
+    margin-top: 5px;
+    padding: 5px
   }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-  }
-  
-  form input {
-    width: 50%;
-    align-self: center;
-  }
-  
-  form label {
-    align-self: center;
-    margin-top: 10px;
-  }
-  
-  .emp {
-    border: 1px solid red;
-    display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 50px 40px;
-  } */
-  
