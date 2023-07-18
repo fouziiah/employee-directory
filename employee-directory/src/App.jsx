@@ -1,5 +1,4 @@
 import "./index.css";
-
 import { data } from "./data";
 import HomePage from "./components/HomePage";
 import { useState } from "react";
