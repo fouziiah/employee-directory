@@ -32,14 +32,35 @@ export default function EmployeePage({employees}){
             <img src={currentEmployee.headshot} className='float'/>
             <div className='employee-info'>
                 <h1>{currentEmployee.name}</h1>
-                <h2>{currentEmployee.title}</h2>
+                <h2><span style={{color: 'grey'}}>{currentEmployee.title}</span></h2>
             </div>            
         </div>
-        <Link><h3>Call Office: {currentEmployee.phone}</h3></Link>
-        <Link><h3>Call Office: {currentEmployee.phone}</h3></Link>
-        <Link><h3>Call Home: {currentEmployee.phone}</h3></Link>
-        <Link><h3>Call SMS: {currentEmployee.phone}</h3></Link>
-        <Link><h3>Email: {currentEmployee.email}</h3></Link>          
+        
+            <h3>
+            <Link>Call Office:</Link>
+                <br />
+                <span style={{color: 'grey'}}>{currentEmployee.phone}</span>
+            </h3>        
+            <h3>
+                <Link>Call Office:</Link> 
+                <br />
+                <span style={{color: 'grey'}}>{currentEmployee.phone}</span>
+            </h3>
+            <h3>
+                <Link>Call Home:</Link>
+                <br />
+                <span style={{color: 'grey'}}>{currentEmployee.phone}</span>
+            </h3>
+            <h3>
+                <Link>Call SMS:</Link>
+                <br />
+                <span style={{color: 'grey'}}>{currentEmployee.phone}</span>
+            </h3>
+            <h3>
+                <Link>Email:</Link>
+                <br /> 
+                <span style={{color: 'grey'}}>{currentEmployee.email}</span>
+            </h3>          
         
         
     </div>
